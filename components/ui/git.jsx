@@ -13,13 +13,13 @@ export const BentoGrid = ({
   className,
   children,
 }: {
-  className?: string;
-  children?: React.ReactNode;
+  className?: string,
+  children?: React.ReactNode,
 }) => {
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
+        "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto ",
         className
       )}
     >
@@ -38,16 +38,16 @@ export const BentoGridItem = ({
   titleClassName,
   spareImg,
 }: {
-  className?: string;
-  title?: string | React.ReactNode;
-  description?: string | React.ReactNode;
-  header?: React.ReactNode;
-  icon?: React.ReactNode;
-  id?: number;
-  img?: string;
-  imgClassName?: string;
-  titleClassName?: string;
-  spareImg?: string;
+  className?: string,
+  title?: string | React.ReactNode,
+  description?: string | React.ReactNode,
+  header?: React.ReactNode,
+  icon?: React.ReactNode,
+  id?: number,
+  img?: string,
+  imgClassName?: string,
+  titleClassName?: string,
+  spareImg?: string,
 }) => {
   const [copied, setCopied] = useState(false);
 
@@ -146,16 +146,12 @@ export const BentoGridItem = ({
 
           {id === 6 && (
             <div className="mt-5 relative">
-              <div
-                className={`absolute -bottom-5 right-0 ${
-                  copied ? "block" : "block"
-                }`}
-              >
+              <div>
                 <Lottie
                   options={{
                     loop: copied,
                     autoplay: copied,
-                    animationData: animationData,
+                    animationData,
                     rendererSettings: {
                       preserveAspectRatio: "xMidYMid slice",
                     },
