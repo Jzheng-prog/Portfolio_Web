@@ -6,16 +6,22 @@ const Experiences = () => {
   return (
     <div className="py-20 w-full">
       <h1 className="heading mb-10 text-xl text-center">
-        My <span className="text-purple">Work Experiences.</span>
+        <span className="text-purple">Experiences.</span>
       </h1>
 
-      <div className="w-full mt-12 flex lg:grid-cols-4 grid-cols-1 gap-10">
+      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
         {workExperience.map((item) => (
           <Button
             key={item.id}
             duration={Math.floor(Math.random() * 10000 + 10000)}
-            className="flex-1 text-white border-neutral-200 dark:border-slate-800"
+            className="flex-1 text-white border-neutral-200 dark:border-slate-800 p-10"
           >
+            {item.id === 3 && (
+              <div className="items-center absolute mb-40">
+                <h1 className="text-lg">None Tech</h1>
+              </div>
+            )}
+
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-4">
               <img
                 src={item.thumbnail}
