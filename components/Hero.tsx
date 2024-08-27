@@ -3,6 +3,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import Button from "./ui/Button";
 import { FaLocationArrow } from "react-icons/fa6";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -29,15 +30,25 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:maxc-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h2 className="uppercase tracking-widest text-xs text-clip text-blue-100 max-w-80">
-            Dynamic Web Magic with next.js
+            Built with next.js
           </h2>
+
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
             words="Transforming Concepts into Seamless Experiences"
           />
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m John
-          </p>
+          <div className="border border-white p-3 m-3 rounded-lg">
+            <Image src="twit.svg" alt="" width={500} height={500} />
+            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+              Hi, I&apos;m John
+            </p>
+            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+              University of Maryland 2020-2024
+            </p>
+            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+              Major: Bachelors in Information Science
+            </p>
+          </div>
 
           <a href="#about">
             <Button

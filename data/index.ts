@@ -1,4 +1,6 @@
+import Languages from "@/components/Languages";
 import { link } from "fs";
+import React from "react";
 
 export const navItems = [
   { name: "About", link: "#about" },
@@ -159,7 +161,7 @@ export const workExperience = [
   {
     id: 2,
     title: "Data Analyst",
-    desc: "Work with clinent to create data visualization and analyst for the Metamorphosis Community.",
+    desc: "Work with client to create data visualization and analyst for the Metamorphosis Community.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
@@ -195,4 +197,28 @@ export const socialMedia = [
     img: "/link.svg",
     link: "https://www.linkedin.com/in/john-zheng-1b1837266/",
   },
+  {
+    id: 4,
+    img: "/monochrome_large.png",
+    link: "https://open.spotify.com/user/oniyy4qtz0fd6hv123175hh03",
+  },
+];
+
+export const workingKnowledge = [
+  "Blender 3D Modeling",
+  "MySQL",
+  "GitHub",
+  "Tableau",
+  "Postman/API",
+  "VSCODE",
+  "Python/Java",
+  "UI/Figma",
+  "Stripe Payment",
+  "Sentry",
+  "Pandas",
+  "Data Analysis and Visualization",
+  "Express",
+  "SEO",
+  "Cybersecurity",
+  "Procreate",
 ];

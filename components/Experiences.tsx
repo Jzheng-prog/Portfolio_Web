@@ -18,7 +18,7 @@ const Experiences = () => {
           >
             {item.id === 3 && (
               <div className="items-center absolute mb-40">
-                <h1 className="text-lg">None Tech</h1>
+                <h1 className="text-lg">Non-Tech</h1>
               </div>
             )}
 

@@ -3,11 +3,11 @@ import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./background-gradient-animation";
 
 import GridGlobe from "./GridGlobe";
-import Lottie from "react-lottie";
 import { useState } from "react";
 import animationData from "@/data/confetti.json";
 import Button from "./Button";
 import { IoCopyOutline } from "react-icons/io5";
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -71,10 +71,12 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="absolute w-full h-full">
           {img && (
-            <img
+            <Image
               src={img}
               alt={img}
               className={cn(imgClassName, "object-cover object-center")}
+              width={500} // Example width; adjust as needed
+              height={500} // Example height; adjust as needed
             />
           )}
         </div>
@@ -86,10 +88,12 @@ export const BentoGridItem = ({
           }`}
         >
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
               alt={spareImg}
               className={` object-cover object-center w-full h-full`}
+              width={500} // Example width; adjust as needed
+              height={500} // Example height; adjust as needed
             />
           )}
         </div>
@@ -150,20 +154,9 @@ export const BentoGridItem = ({
                 className={`absolute -bottom-5 right-0 ${
                   copied ? "block" : "block"
                 }`}
-              >
-                <Lottie
-                  options={{
-                    loop: copied,
-                    autoplay: copied,
-                    animationData: animationData,
-                    rendererSettings: {
-                      preserveAspectRatio: "xMidYMid slice",
-                    },
-                  }}
-                />
-              </div>
+              ></div>
               <Button
-                handleClick={handleCopy}
+                handleclick={handleCopy}
                 icon={<IoCopyOutline />}
                 position="left"
                 otherClasses="!bg-[#161a31]"
