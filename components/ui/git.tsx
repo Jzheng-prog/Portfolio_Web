@@ -8,13 +8,14 @@ import { useState } from "react";
 import animationData from "@/data/confetti.json";
 import Button from "./Button";
 import { IoCopyOutline } from "react-icons/io5";
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
   children,
 }: {
-  className?: string,
-  children?: React.ReactNode,
+  className?: string;
+  children?: React.ReactNode;
 }) => {
   return (
     <div
@@ -38,16 +39,16 @@ export const BentoGridItem = ({
   titleClassName,
   spareImg,
 }: {
-  className?: string,
-  title?: string | React.ReactNode,
-  description?: string | React.ReactNode,
-  header?: React.ReactNode,
-  icon?: React.ReactNode,
-  id?: number,
-  img?: string,
-  imgClassName?: string,
-  titleClassName?: string,
-  spareImg?: string,
+  className?: string;
+  title?: string | React.ReactNode;
+  description?: string | React.ReactNode;
+  header?: React.ReactNode;
+  icon?: React.ReactNode;
+  id?: number;
+  img?: string;
+  imgClassName?: string;
+  titleClassName?: string;
+  spareImg?: string;
 }) => {
   const [copied, setCopied] = useState(false);
 
@@ -71,10 +72,12 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="absolute w-full h-full">
           {img && (
-            <img
+            <Image
               src={img}
               alt={img}
               className={cn(imgClassName, "object-cover object-center")}
+              width={500}
+              height={500}
             />
           )}
         </div>
@@ -86,10 +89,12 @@ export const BentoGridItem = ({
           }`}
         >
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
               alt={spareImg}
               className={` object-cover object-center w-full h-full`}
+              width={500}
+              height={500}
             />
           )}
         </div>
@@ -159,7 +164,7 @@ export const BentoGridItem = ({
                 />
               </div>
               <Button
-                handleClick={handleCopy}
+                handleclick={handleCopy}
                 icon={<IoCopyOutline />}
                 position="left"
                 otherClasses="!bg-[#161a31]"

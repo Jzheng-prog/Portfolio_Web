@@ -4,6 +4,7 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 import Button from "./ui/Button";
 import { FaLocationArrow } from "react-icons/fa6";
 import Image from "next/image";
+import pfp from "../public/pfp.png";
 
 const Hero = () => {
   return (
@@ -35,19 +36,30 @@ const Hero = () => {
 
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Transforming Concepts into Seamless Experiences"
+            words="Creative Web Developer & Data Analyst"
           />
-          <div className="border border-white p-3 m-3 rounded-lg">
-            <Image src="twit.svg" alt="" width={500} height={500} />
-            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-              Hi, I&apos;m John
-            </p>
-            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-              University of Maryland 2020-2024
-            </p>
-            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-              Major: Bachelors in Information Science
-            </p>
+          <div className="p-3 m-3 rounded-lg lg:flex">
+            <Image
+              unoptimized
+              src={pfp}
+              alt="profile picture"
+              width={500}
+              height={500}
+              className="rounded-full mb-4 border md:h-[500px] md:w-[350px]"
+            />
+            <div className="xl:h-full lg:items-center lg:flex">
+              <div className="p-2">
+                <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+                  Hi, I&apos;m John
+                </p>
+                <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+                  University of Maryland 2020-2024
+                </p>
+                <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+                  Major: Bachelors in Information Science
+                </p>
+              </div>
+            </div>
           </div>
 
           <a href="#about">
