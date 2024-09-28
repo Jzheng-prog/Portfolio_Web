@@ -1,4 +1,3 @@
-import Clients from "@/components/Clients";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import Experiences from "@/components/Experiences";
@@ -9,6 +8,7 @@ import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
 import Languages from "@/components/Languages";
 import WorkingKnowlege from "@/components/WorkingKnowlege";
+import Design from "@/components/Design";
 
 export default function Home() {
   return (
@@ -18,10 +18,9 @@ export default function Home() {
         <Grid />
         <Languages />
         <RecentProjects />
-        {/* <Clients /> */}
+        <Design />
         <Experiences />
         <WorkingKnowlege />
-        {/* <Approach /> */}
         <Footer />
       </div>
     </main>

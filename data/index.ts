@@ -222,3 +222,18 @@ export const workingKnowledge = [
   "Cybersecurity",
   "Procreate",
 ];
+
+export const designs = [
+  {
+    title: "Donut&Coffee",
+    image: "/donut&coffee.jpg",
+  },
+  {
+    title: "Grocery",
+    image: "/groceryStore.jpg",
+  },
+  {
+    title: "GameStore",
+    image: "/gameStore.jpg",
+  },
+];

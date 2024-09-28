@@ -7,12 +7,12 @@ import Image from "next/image";
 const RecentProjects = () => {
   const projs = projects;
   return (
-    <div className="py-20 mynpm-10" id="projects">
-      <h1 className="heading mb-10 text-xl text-center">
+    <div className="py-10" id="projects">
+      <h1 className="heading text-xl text-center">
         A Small Selection of{" "}
         <span className="text-purple">recent projects.</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8">
         {projs.map(({ id, title, des, img, iconLists, link }) => (
           <div
             className="sm:w-[570px] sm:h-[41rem] lg:min-h-[32.5rem] h-[32rem] flex items-center justify-center sm:w-96 w-[80vw]"
