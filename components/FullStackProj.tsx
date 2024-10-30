@@ -1,6 +1,7 @@
 import React from "react";
 import { fullstackProjs } from "@/data";
 import Image from "next/image";
+import { IoIosLink } from "react-icons/io";
 
 const FullStackProj = () => {
   return (
@@ -13,7 +14,7 @@ const FullStackProj = () => {
         {fullstackProjs.map((proj) => (
           <div
             key={proj.id}
-            className="border p-2 rounded-md m-2 sm:w-[570px] justify-center"
+            className="border p-2 rounded-md m-2 sm:w-[570px] justify-center shadow-sm"
           >
             <div className="rounded-md items-center justify-center flex border relative w-full h-[200px] sm:h-[300px] md:h-[400px]">
               <Image
@@ -42,6 +43,11 @@ const FullStackProj = () => {
                 <hr className="mb-1" />
                 <p className="text-sm">{proj.des}</p>
               </div>
+            </div>
+
+            <div className="flex items-end justify-end hover:text-gray-500 transiton m-2">
+              <IoIosLink className="text-white mr-2" size={20} />
+              <a href={proj.link}>Github Link</a>
             </div>
           </div>
         ))}

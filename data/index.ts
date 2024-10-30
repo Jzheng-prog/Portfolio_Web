@@ -130,7 +130,7 @@ export const fullstackProjs = [
   {
     id: 3,
     title: "OnlineShop",
-    tech: "Vanilla JavaScript, CSS, HTML, Node.js, MongoDB,Stripe and Express.js.",
+    tech: "Vanilla JavaScript, CSS, HTML, Node.js, MongoDB, Stripe and Express.js.",
     des: "Simple e-commerce website with admin rights, product-listing, order processing and history. The project follows the Model/View/Controller (MVC) pattern and uses MongoDB as the backend database server.",
     img: "/onlineShop.jpg",
     iconLists: [],

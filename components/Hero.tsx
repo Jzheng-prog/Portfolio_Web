@@ -32,7 +32,7 @@ const Hero = () => {
         <div className="max-w-[89vw] md:maxc-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Creative Web Developer & Data Analyst"
+            words="Junior Web Developer & Data Analyst"
           />
           <div className="p-3 m-3 rounded-lg lg:flex">
             <Image
