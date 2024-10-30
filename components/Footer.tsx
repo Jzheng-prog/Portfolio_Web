@@ -39,6 +39,7 @@ const Footer = () => {
                 ) : info.id === 4 ? (
                   <Image
                     src={info.img}
+                    unoptimized
                     alt="icons"
                     width={22} // or appropriate width
                     height={22} // or appropriate height

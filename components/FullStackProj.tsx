@@ -19,6 +19,7 @@ const FullStackProj = () => {
             <div className="rounded-md items-center justify-center flex border relative w-full h-[200px] sm:h-[300px] md:h-[400px]">
               <Image
                 priority
+                unoptimized
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 src={proj.img}
                 alt={`${proj.title} image`}

@@ -24,6 +24,7 @@ const RecentProjects = () => {
                   <Image
                     src="/bg.png"
                     alt="bg-img"
+                    unoptimized
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                   />

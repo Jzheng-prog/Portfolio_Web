@@ -20,6 +20,7 @@ const Design = () => {
               width={556}
               height={417}
               priority
+              unoptimized
             />
           </div>
         ))}
