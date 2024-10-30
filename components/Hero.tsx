@@ -30,10 +30,6 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:maxc-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-xs text-clip text-blue-100 max-w-80">
-            Built with next.js
-          </h2>
-
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
             words="Creative Web Developer & Data Analyst"
@@ -41,6 +37,7 @@ const Hero = () => {
           <div className="p-3 m-3 rounded-lg lg:flex">
             <Image
               unoptimized
+              priority
               src={pfp}
               alt="profile picture"
               width={500}

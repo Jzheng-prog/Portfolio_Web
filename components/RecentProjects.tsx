@@ -7,77 +7,75 @@ import Image from "next/image";
 const RecentProjects = () => {
   const projs = projects;
   return (
-    <div className="py-10" id="projects">
+    <div className="py-20" id="projects">
       <h1 className="heading text-xl text-center">
         A Small Selection of{" "}
         <span className="text-purple">recent projects.</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8">
+      <div className="flex flex-wrap items-center justify-center p-4 mt-10 lg:gap-16">
         {projs.map(({ id, title, des, img, iconLists, link }) => (
           <div
-            className="sm:w-[570px] sm:h-[41rem] lg:min-h-[32.5rem] h-[32rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            className="sm:w-[570px] sm:h-[41rem] lg:min-h-[32.5rem] h-[32rem] flex items-center justify-center w-[80vw]"
             key={id}
           >
-            <a href={link}>
-              <PinContainer title={link} href={link}>
-                <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
-                  <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
-                    <Image
-                      src="/bg.png"
-                      alt="bg-img"
-                      width={500} // Example width; adjust as needed
-                      height={500} // Example height; adjust as needed
-                    />
-                  </div>
+            <PinContainer title={link} href={link}>
+              <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
+                <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
                   <Image
-                    unoptimized
-                    src={img}
-                    alt={title}
-                    className={
-                      id === 4
-                        ? "z-10 absolute bottom-0"
-                        : "z-10 absolute w-full h-full object-cover rounded-xl"
-                    }
-                    width={500} // Example width; adjust as needed
-                    height={500} // Example height; adjust as needed
+                    src="/bg.png"
+                    alt="bg-img"
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                   />
                 </div>
-                <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
-                  {title}
-                </h1>
-                <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
-                  {des}
-                </p>
-                <div className="flex items-center justify-between mt-7 mb-3">
-                  <div className="flex items-center">
-                    {iconLists.map((icon, index) => (
-                      <div
-                        key={icon}
-                        style={{
-                          transform: `translateX(-${5 * index * 2}px)`,
-                        }}
-                        className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      >
-                        <Image
-                          src={icon}
-                          alt="icon"
-                          className="p-2"
-                          width={500} // Example width; adjust as needed
-                          height={500} // Example height; adjust as needed
-                        />
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="flex justify-center items-center">
-                    <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                      Check live Site
-                    </p>
-                    <FaLocationArrow className="ms-3" color="CBACF9" />
-                  </div>
+                <Image
+                  unoptimized
+                  src={img}
+                  alt={title}
+                  className={
+                    id === 2
+                      ? "z-10 absolute bottom-0"
+                      : "z-10 absolute w-full h-full object-cover rounded-xl"
+                  }
+                  width={id === 1 ? 1089 : 450}
+                  height={id === 1 ? 638 : 302}
+                />
+              </div>
+              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+                {title}
+              </h1>
+              <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2">
+                {des}
+              </p>
+              <div className="flex items-center justify-between mt-7 mb-3">
+                <div className="flex items-center">
+                  {iconLists.map((icon, index) => (
+                    <div
+                      key={icon}
+                      style={{
+                        transform: `translateX(-${5 * index * 2}px)`,
+                      }}
+                      className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                    >
+                      <Image
+                        src={icon}
+                        alt="icon"
+                        className="p-2"
+                        width={500}
+                        height={500}
+                      />
+                    </div>
+                  ))}
                 </div>
-              </PinContainer>
-            </a>
+
+                <div className="flex justify-center items-center">
+                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                    Check live Site
+                  </p>
+                  <FaLocationArrow className="ms-3" color="CBACF9" />
+                </div>
+              </div>
+            </PinContainer>
           </div>
         ))}
       </div>

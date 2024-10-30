@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import Languages from "@/components/Languages";
 import WorkingKnowlege from "@/components/WorkingKnowlege";
 import Design from "@/components/Design";
+import FullStackProj from "@/components/FullStackProj";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Grid />
         <Languages />
         <RecentProjects />
+        <FullStackProj />
         <Design />
         <Experiences />
         <WorkingKnowlege />
