@@ -6,17 +6,17 @@ import { IoIosLink } from "react-icons/io";
 const FullStackProj = () => {
   return (
     <div>
-      <h1 className="font-bold heading items-center flex justify-center my-4">
-        <span className="font-bold text-purple">Full-Stack &nbsp; </span>
-        Projects
-      </h1>
+      <div className="items-center justify-center flex font-bold text-3xl mb-3 md:text-5xl md:mb-6 lg:mb-8">
+        <h1 className="text-purple">Full-Stack &nbsp; </h1>
+        <h1>Project</h1>
+      </div>
       <div className="flex flex-wrap justify-center items-center">
         {fullstackProjs.map((proj) => (
           <div
             key={proj.id}
-            className="border p-2 rounded-md m-2 sm:w-[570px] justify-center shadow-sm"
+            className="md:border md:p-2 rounded-md m-2 sm:w-[570px] justify-center"
           >
-            <div className="rounded-md items-center justify-center flex border relative w-full h-[200px] sm:h-[300px] md:h-[400px]">
+            <div className="rounded-md items-center justify-center flex border relative h-[200px] sm:h-[300px] md:h-[400px] md:m-2">
               <Image
                 priority
                 unoptimized
@@ -46,10 +46,13 @@ const FullStackProj = () => {
               </div>
             </div>
 
-            <div className="flex items-end justify-end hover:text-gray-500 transiton m-2">
-              <IoIosLink className="text-white mr-2" size={20} />
-              <a href={proj.link}>Github Link</a>
-            </div>
+            <a
+              href={proj.link}
+              className="flex items-center justify-center bg-blue-500 rounded-md font-bold hover:bg-blue-700 transition m-2 border p-3"
+            >
+              <IoIosLink className="mr-2" size={20} />
+              Link
+            </a>
           </div>
         ))}
       </div>
