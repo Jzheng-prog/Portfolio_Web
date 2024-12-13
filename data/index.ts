@@ -226,4 +226,42 @@ export const designs = [
   // },
 ];
 
-export const ReactNativeProjs = [{}];
+export const uber = [
+  "/React-Native/uber-clone/uber-welcome3.png",
+  "/React-Native/uber-clone/uber-welcome2.png",
+  "/React-Native/uber-clone/uber-welcome1.png",
+  "/React-Native/uber-clone/uber-home.png",
+  "/React-Native/uber-clone/uber-verification.png",
+  "/React-Native/uber-clone/uber-verification2.png",
+  "/React-Native/uber-clone/uber-stripe.png",
+  "/React-Native/uber-clone/uber-signUp.png",
+  "/React-Native/uber-clone/uber-login.png",
+  "/React-Native/uber-clone/uber-ride.png",
+  "/React-Native/uber-clone/uber-driver.png",
+  "/React-Native/uber-clone/uber-confirm.png",
+  "/React-Native/uber-clone/uber-booked.png",
+  "/React-Native/uber-clone/uber-allRide.png",
+];
+export const videoSharingApp = [
+  "/React-Native/VSharing/video-homePage.png",
+  "/React-Native/VSharing/video-signUp.png",
+  "/React-Native/VSharing/video-login.png",
+  "/React-Native/VSharing/video-bookmark.png",
+  "/React-Native/VSharing/video-creat.png",
+  "/React-Native/VSharing/video-profile.png",
+];
+
+export const NativeDescription = [
+  {
+    title: "Uber-Clone",
+    tech: "React-Native | Expo | NativeWind | Stripe | PostgreSQL | Clerk",
+    description:
+      "A full-stack React Native application that mimic the main features of uber. This app includes features like user registration, oAuth, email authentication, live-location and google maps. Find/Select/and paid for transportation service.",
+  },
+  {
+    title: "Video-Sharing-App",
+    tech: "React-Native | Expo | NativeWind | Appwrite",
+    description:
+      "A full-stack video sharing media app. Main features includes upload, pull-refresh, search, sign-up/login",
+  },
+];
