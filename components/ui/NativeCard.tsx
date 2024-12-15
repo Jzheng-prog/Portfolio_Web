@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+"use client";
+import React, { useState } from "react";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import Image from "next/image";
 
@@ -24,11 +25,9 @@ const NativeCard: React.FC<NativeCardProp> = ({ data }) => {
         setIndex(index + 1);
       }
     }
-    console.log({ direction }, { index });
   };
   return (
     <div>
-      {/* <h1 className="text-center font-bold text-xl">{project}</h1> */}
       <div className="flex flex-col items-center">
         <div className="p-2 px-6 bg-black absolute border rounded-full my-4 z-50" />
 
@@ -45,6 +44,7 @@ const NativeCard: React.FC<NativeCardProp> = ({ data }) => {
             height={524.25}
             alt=""
             className="rounded-3xl pointer-events-none select-none"
+            unoptimized
           />
 
           <FaArrowAltCircleRight

@@ -1,4 +1,3 @@
-"use client";
 import { uber, videoSharingApp, NativeDescription } from "@/data";
 import React from "react";
 import NativeCard from "./ui/NativeCard";

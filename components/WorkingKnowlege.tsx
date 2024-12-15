@@ -1,27 +1,10 @@
-"use client";
 import { workingKnowledge } from "@/data";
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import React from "react";
 
 const WorkingKnowledge = () => {
-  const headingRef = useRef(null); // Create a ref for the heading
-
-  useEffect(() => {
-    // Animation for heading
-    gsap.to(headingRef.current, {
-      opacity: 1,
-      duration: 1, // Duration of the animation in seconds
-      y: 0, // Reset y-position
-      ease: "power2.out", // Easing function for a smooth animation
-    });
-  }, []);
-
   return (
     <div className="w-full flex flex-col items-center justify-center my-5">
-      <h1
-        ref={headingRef} // Assign ref to the heading
-        className="font-bold text-3xl md:text-4xl lg:text-5xl mb-2 opacity-0"
-      >
+      <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl mb-2">
         Working Knowledge
       </h1>
       <p className="font-semibold text-sm md:text-md lg:text-lg mb-4">

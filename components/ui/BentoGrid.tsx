@@ -2,9 +2,7 @@
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./background-gradient-animation";
 
-import GridGlobe from "./GridGlobe";
 import { useState } from "react";
-import animationData from "@/data/confetti.json";
 import Button from "./Button";
 import { IoCopyOutline } from "react-icons/io5";
 import Image from "next/image";
@@ -118,7 +116,15 @@ export const BentoGridItem = ({
             {title}
           </div>
 
-          {id === 2 && <GridGlobe />}
+          {id === 2 && (
+            <Image
+              src="/Grid/maryland.webp"
+              alt=""
+              width={150}
+              height={150}
+              className=" absolute bottom-0 right-4 hidden md:flex"
+            />
+          )}
 
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">

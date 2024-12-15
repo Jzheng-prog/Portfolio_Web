@@ -8,7 +8,7 @@ import pfp from "../public/pfp.png";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className=" pt-36 border">
       {/* spotlight */}
       <div>
         <Spotlight
@@ -46,13 +46,13 @@ const Hero = () => {
             />
             <div className="xl:h-full lg:items-center lg:flex">
               <div className="p-2">
-                <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+                <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white">
                   Hi, I&apos;m John
                 </p>
-                <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+                <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white">
                   University of Maryland 2020-2024
                 </p>
-                <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+                <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white">
                   Major: Bachelors in Information Science
                 </p>
               </div>

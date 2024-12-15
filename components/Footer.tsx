@@ -18,7 +18,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-center items-center">
-        <p className="md:text-base text-sm md:font-normal font-light mx-4">
+        <p className="md:text-base text-sm md:font-normal font-light mx-4 mb-4 md:mb-0">
           Copyright © 2024 John Zheng
         </p>
 
