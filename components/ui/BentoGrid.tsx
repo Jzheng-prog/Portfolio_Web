@@ -118,6 +118,7 @@ export const BentoGridItem = ({
 
           {id === 2 && (
             <Image
+              unoptimized
               src="/Grid/maryland.webp"
               alt=""
               width={150}

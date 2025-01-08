@@ -8,7 +8,7 @@ import pfp from "../public/pfp.png";
 
 const Hero = () => {
   return (
-    <div className=" pt-36 border">
+    <div className=" pt-36">
       {/* spotlight */}
       <div>
         <Spotlight

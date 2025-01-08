@@ -254,14 +254,19 @@ export const videoSharingApp = [
 export const NativeDescription = [
   {
     title: "Uber-Clone",
-    tech: "React-Native | Expo | NativeWind | Stripe | PostgreSQL | Clerk",
-    description:
-      "A full-stack React Native application that mimic the main features of uber. This app includes features like user registration, oAuth, email authentication, live-location and google maps. Find/Select/and paid for transportation service.",
+    tech: "React-Native | Expo | NativeWind | Stripe | PostgreSQL | Clerk | Google-Api",
+    description: `A full-stack React Native application that mimic the main features of uber. 
+      Users of this app can register an account stored in NeonDB(PostgreSQL) and login with code email code verification implemented with cleck-expo or Google OAuth.
+      Key features include live location sharing using the Google Directions API, interactive map using Google Maps APi and React-maps, 
+      dynamic price calculation based on distance and time, and secure payment processing with Stripe.`,
   },
   {
     title: "Video-Sharing-App",
     tech: "React-Native | Expo | NativeWind | Appwrite",
-    description:
-      "A full-stack video sharing media app. Main features includes upload, pull-refresh, search, sign-up/login",
+    description: `A full-stack video-sharing platform designed to provide an engaging and user-friendly experience.
+       The application includes essential features such as video uploads, allowing users to share their content easily. 
+       It also supports a pull-to-refresh functionality for seamless content updates, ensuring users stay up-to-date with the latest videos. 
+       The platform incorporates a robust search system, enabling users to discover content quickly and efficiently.
+        Additionally, it offers a authentication system for sign-up and login.`,
   },
 ];

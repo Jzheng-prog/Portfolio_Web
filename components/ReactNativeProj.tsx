@@ -4,7 +4,7 @@ import NativeCard from "./ui/NativeCard";
 
 const ReactNativeProj = () => {
   return (
-    <div className="p-2 flex-col flex items-center mt-6">
+    <div className="p-2 flex-col flex items-center my-10">
       <h1 className="text-purple items-center justify-center flex font-bold text-3xl mb-3 md:text-5xl md:mb-6 lg:mb-8">
         React-Native Projects
       </h1>

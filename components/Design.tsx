@@ -7,7 +7,7 @@ const Design = () => {
   return (
     <div className="my-4">
       <h1 className="text-center text-3xl md:text-5xl font-bold mb-5">
-        My Web Designs
+        My Web <span className="text-purple">Designs</span>
       </h1>
       <div className="flex flex-col justify-center md:flex-row">
         {myDesigns.map((item, index) => (
