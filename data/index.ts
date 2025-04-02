@@ -251,6 +251,14 @@ export const videoSharingApp = [
   "/React-Native/VSharing/video-profile.png",
 ];
 
+export const realEstate = [
+  "/React-Native/realEstate/1.png",
+  "/React-Native/realEstate/2.png",
+  "/React-Native/realEstate/3.png",
+  "/React-Native/realEstate/4.png",
+  "/React-Native/realEstate/5.png",
+];
+
 export const NativeDescription = [
   {
     title: "Uber-Clone",
@@ -268,5 +276,70 @@ export const NativeDescription = [
        It also supports a pull-to-refresh functionality for seamless content updates, ensuring users stay up-to-date with the latest videos. 
        The platform incorporates a robust search system, enabling users to discover content quickly and efficiently.
         Additionally, it offers a authentication system for sign-up and login.`,
+  },
+  {
+    title: "Real-Estate-App",
+    tech: "React-Native | Expo | NativeWind | Appwrite",
+    description: `A full-stack real-estate-app designed to provide users with a 
+    seamless property browsing experience with dynamic routing and filtering. The app offers a clean and intuitive 
+    interface, styled with NativeWind, ensuring a responsive and visually appealing experience.`,
+  },
+];
+
+export const ReactNativeProject = [
+  {
+    name: "Uber-Clone",
+    images: [
+      "/React-Native/uber-clone/uber-welcome3.png",
+      "/React-Native/uber-clone/uber-welcome2.png",
+      "/React-Native/uber-clone/uber-welcome1.png",
+      "/React-Native/uber-clone/uber-home.png",
+      "/React-Native/uber-clone/uber-verification.png",
+      "/React-Native/uber-clone/uber-verification2.png",
+      "/React-Native/uber-clone/uber-stripe.png",
+      "/React-Native/uber-clone/uber-signUp.png",
+      "/React-Native/uber-clone/uber-login.png",
+      "/React-Native/uber-clone/uber-ride.png",
+      "/React-Native/uber-clone/uber-driver.png",
+      "/React-Native/uber-clone/uber-confirm.png",
+      "/React-Native/uber-clone/uber-booked.png",
+      "/React-Native/uber-clone/uber-allRide.png",
+    ],
+    tech: "React-Native | Expo | NativeWind | Stripe | PostgreSQL | Clerk | Google-Api",
+    description: `A full-stack React Native application that mimic the main features of uber. 
+      Users of this app can register an account stored in NeonDB(PostgreSQL) and login with code email code verification implemented with cleck-expo or Google OAuth.
+      Key features include live location sharing using the Google Directions API, interactive map using Google Maps APi and React-maps, 
+      dynamic price calculation based on distance and time, and secure payment processing with Stripe.`,
+  },
+  {
+    name: "Video-Sharing-App",
+    images: [
+      "/React-Native/VSharing/video-homePage.png",
+      "/React-Native/VSharing/video-signUp.png",
+      "/React-Native/VSharing/video-login.png",
+      "/React-Native/VSharing/video-bookmark.png",
+      "/React-Native/VSharing/video-creat.png",
+      "/React-Native/VSharing/video-profile.png",
+    ],
+    tech: "React-Native | Expo | NativeWind | Appwrite",
+    description: `A full-stack video-sharing platform designed to provide an engaging and user-friendly experience.
+      The application includes essential features such as video uploads, allowing users to share their content easily. 
+      It also supports a pull-to-refresh functionality for seamless content updates, ensuring users stay up-to-date with the latest videos. 
+      The platform incorporates a robust search system, enabling users to discover content quickly and efficiently.
+      Additionally, it offers a authentication system for sign-up and login.`,
+  },
+  {
+    name: "Real-Estate-App",
+    images: [
+      "/React-Native/realEstate/1.png",
+      "/React-Native/realEstate/2.png",
+      "/React-Native/realEstate/3.png",
+      "/React-Native/realEstate/4.png",
+      "/React-Native/realEstate/5.png",
+    ],
+    tech: "React-Native | Expo | NativeWind | Appwrite",
+    description: `A full-stack real-estate-app designed to provide users with a 
+    seamless property browsing experience with dynamic routing and filtering. The app offers a clean and intuitive 
+    interface, styled with NativeWind, ensuring a responsive and visually appealing experience.`,
   },
 ];

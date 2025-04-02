@@ -7,7 +7,7 @@ import Languages from "@/components/Languages";
 import WorkingKnowlege from "@/components/WorkingKnowlege";
 import Design from "@/components/Design";
 import FullStackProj from "@/components/FullStackProj";
-import ReactNativeProj from "@/components/ReactNativeProj";
+import RNProjects from "@/components/RNProjects";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
         <Languages />
         <RecentProjects />
         <FullStackProj />
-        <ReactNativeProj />
+        <RNProjects />
         <Design />
         <Experiences />
         <WorkingKnowlege />
