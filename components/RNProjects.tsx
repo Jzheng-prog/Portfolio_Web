@@ -8,8 +8,8 @@ const RNProjects = () => {
         React-Native Projects
       </h1>
       <div className="xl:grid xl:grid-cols-2">
-        {ReactNativeProject.map((proj) => (
-          <div className="my-3 xl:m-4">
+        {ReactNativeProject.map((proj, i) => (
+          <div className="my-3 xl:m-4" key={i}>
             <NativeCard data={proj} />
           </div>
         ))}
